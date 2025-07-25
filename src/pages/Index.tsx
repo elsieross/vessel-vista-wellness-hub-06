@@ -1,5 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Heart, Bandage, TrendingUp, Activity, Pill, ArrowRight, Menu, Zap } from "lucide-react";
+import { Heart, Bandage, TrendingUp, Activity, Pill, Menu, Zap } from "lucide-react";
 import { useState, useEffect } from "react";
 const Index = () => {
   const [currentService, setCurrentService] = useState(0);
@@ -61,12 +61,9 @@ const Index = () => {
           <div className="group">
             <Card className="bg-gray-50 hover:bg-gray-100 transition-all duration-300 border-none shadow-lg hover:shadow-xl">
               <CardContent className="p-8">
-                <div className="flex items-center justify-between mb-6">
+                <div className="mb-6">
                   <div className="w-16 h-16 bg-red-100 rounded-2xl flex items-center justify-center">
                     <Bandage className="h-8 w-8 text-red-600" />
-                  </div>
-                  <div className="w-10 h-10 bg-black rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
-                    <ArrowRight className="h-5 w-5 text-white" />
                   </div>
                 </div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-2">
@@ -83,12 +80,9 @@ const Index = () => {
           <div className="group">
             <Card className="bg-gray-50 hover:bg-gray-100 transition-all duration-300 border-none shadow-lg hover:shadow-xl">
               <CardContent className="p-8">
-                <div className="flex items-center justify-between mb-6">
+                <div className="mb-6">
                   <div className="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center">
                     <Activity className="h-8 w-8 text-blue-600" />
-                  </div>
-                  <div className="w-10 h-10 bg-black rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
-                    <ArrowRight className="h-5 w-5 text-white" />
                   </div>
                 </div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-2">
@@ -105,12 +99,9 @@ const Index = () => {
           <div className="group">
             <Card className="bg-gray-50 hover:bg-gray-100 transition-all duration-300 border-none shadow-lg hover:shadow-xl">
               <CardContent className="p-8">
-                <div className="flex items-center justify-between mb-6">
+                <div className="mb-6">
                   <div className="w-16 h-16 bg-green-100 rounded-2xl flex items-center justify-center">
                     <TrendingUp className="h-8 w-8 text-green-600" />
-                  </div>
-                  <div className="w-10 h-10 bg-black rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
-                    <ArrowRight className="h-5 w-5 text-white" />
                   </div>
                 </div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-2">
@@ -127,12 +118,9 @@ const Index = () => {
           <div className="group">
             <Card className="bg-gray-50 hover:bg-gray-100 transition-all duration-300 border-none shadow-lg hover:shadow-xl">
               <CardContent className="p-8">
-                <div className="flex items-center justify-between mb-6">
+                <div className="mb-6">
                   <div className="w-16 h-16 bg-purple-100 rounded-2xl flex items-center justify-center">
                     <Heart className="h-8 w-8 text-purple-600" />
-                  </div>
-                  <div className="w-10 h-10 bg-black rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
-                    <ArrowRight className="h-5 w-5 text-white" />
                   </div>
                 </div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-2">
@@ -149,12 +137,9 @@ const Index = () => {
           <div className="group">
             <Card className="bg-gray-50 hover:bg-gray-100 transition-all duration-300 border-none shadow-lg hover:shadow-xl">
               <CardContent className="p-8">
-              <div className="flex items-center justify-between mb-6">
+              <div className="mb-6">
                 <div className="w-16 h-16 bg-orange-100 rounded-2xl flex items-center justify-center">
                   <Pill className="h-8 w-8 text-orange-600" />
-                </div>
-                <div className="w-10 h-10 bg-black rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
-                  <ArrowRight className="h-5 w-5 text-white" />
                 </div>
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-2">
@@ -171,12 +156,9 @@ const Index = () => {
           <div className="group">
             <Card className="bg-gray-50 hover:bg-gray-100 transition-all duration-300 border-none shadow-lg hover:shadow-xl">
               <CardContent className="p-8">
-                <div className="flex items-center justify-between mb-6">
+                <div className="mb-6">
                   <div className="w-16 h-16 bg-cyan-100 rounded-2xl flex items-center justify-center">
                     <Zap className="h-8 w-8 text-cyan-600" />
-                  </div>
-                  <div className="w-10 h-10 bg-black rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
-                    <ArrowRight className="h-5 w-5 text-white" />
                   </div>
                 </div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-2">
