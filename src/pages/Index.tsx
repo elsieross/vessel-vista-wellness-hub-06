@@ -1,7 +1,5 @@
-import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Heart, Bandage, TrendingUp, Activity, Pill, ArrowRight, Menu, Zap } from "lucide-react";
-import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 const Index = () => {
   const [currentService, setCurrentService] = useState(0);
@@ -12,11 +10,6 @@ const Index = () => {
     }, 2000);
     return () => clearInterval(interval);
   }, []);
-  const scrollToServices = () => {
-    document.getElementById('services-section')?.scrollIntoView({
-      behavior: 'smooth'
-    });
-  };
   return <div className="min-h-screen bg-white">
       {/* Header */}
       <header className="bg-white border-b border-gray-100">
@@ -57,9 +50,6 @@ const Index = () => {
             </p>
           </div>
 
-          <Button onClick={scrollToServices} className="bg-orange-600 hover:bg-orange-700 text-white px-8 py-6 text-lg font-semibold rounded-full">
-            Get Started
-          </Button>
         </div>
       </section>
 
@@ -68,7 +58,7 @@ const Index = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           
           {/* Wounds Card */}
-          <Link to="/wounds" className="group">
+          <div className="group">
             <Card className="bg-gray-50 hover:bg-gray-100 transition-all duration-300 border-none shadow-lg hover:shadow-xl">
               <CardContent className="p-8">
                 <div className="flex items-center justify-between mb-6">
@@ -87,10 +77,10 @@ const Index = () => {
                 </p>
               </CardContent>
             </Card>
-          </Link>
+          </div>
 
           {/* Veins Card */}
-          <Link to="/veins" className="group">
+          <div className="group">
             <Card className="bg-gray-50 hover:bg-gray-100 transition-all duration-300 border-none shadow-lg hover:shadow-xl">
               <CardContent className="p-8">
                 <div className="flex items-center justify-between mb-6">
@@ -109,10 +99,10 @@ const Index = () => {
                 </p>
               </CardContent>
             </Card>
-          </Link>
+          </div>
 
           {/* Leg Swelling Card */}
-          <Link to="/leg-swelling" className="group">
+          <div className="group">
             <Card className="bg-gray-50 hover:bg-gray-100 transition-all duration-300 border-none shadow-lg hover:shadow-xl">
               <CardContent className="p-8">
                 <div className="flex items-center justify-between mb-6">
@@ -131,10 +121,10 @@ const Index = () => {
                 </p>
               </CardContent>
             </Card>
-          </Link>
+          </div>
 
           {/* Athletes Card */}
-          <Link to="/athletes" className="group">
+          <div className="group">
             <Card className="bg-gray-50 hover:bg-gray-100 transition-all duration-300 border-none shadow-lg hover:shadow-xl">
               <CardContent className="p-8">
                 <div className="flex items-center justify-between mb-6">
@@ -153,10 +143,10 @@ const Index = () => {
                 </p>
               </CardContent>
             </Card>
-          </Link>
+          </div>
 
           {/* BioEssentials Card */}
-          <Link to="/bioessentials" className="group">
+          <div className="group">
             <Card className="bg-gray-50 hover:bg-gray-100 transition-all duration-300 border-none shadow-lg hover:shadow-xl">
               <CardContent className="p-8">
               <div className="flex items-center justify-between mb-6">
@@ -175,10 +165,10 @@ const Index = () => {
               </p>
               </CardContent>
             </Card>
-          </Link>
+          </div>
 
           {/* Compression Card */}
-          <Link to="/compression" className="group">
+          <div className="group">
             <Card className="bg-gray-50 hover:bg-gray-100 transition-all duration-300 border-none shadow-lg hover:shadow-xl">
               <CardContent className="p-8">
                 <div className="flex items-center justify-between mb-6">
@@ -197,7 +187,7 @@ const Index = () => {
                 </p>
               </CardContent>
             </Card>
-          </Link>
+          </div>
 
           {/* Trust Statement Card */}
           <Card className="bg-gradient-to-br from-orange-50 to-orange-100 border-none shadow-lg md:col-span-2 lg:col-span-3">
